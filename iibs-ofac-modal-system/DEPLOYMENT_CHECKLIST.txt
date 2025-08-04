@@ -1,0 +1,115 @@
+===============================================
+DEPLOYMENT CHECKLIST - IIBS & OFAC MODAL SYSTEM
+===============================================
+
+PRE-DEPLOYMENT CHECKLIST:
+=========================
+
+□ XAMPP SETUP:
+  □ XAMPP installed and configured
+  □ Apache service started
+  □ MySQL/MariaDB service started
+  □ PHP version 7.4+ confirmed
+
+□ DATABASE SETUP:
+  □ phpMyAdmin accessible (http://localhost/phpmyadmin)
+  □ db_setup.sql imported successfully
+  □ Database 'modal_system' created
+  □ Tables created: admin_users, iibs_records, ofac_records
+  □ Sample data inserted
+  □ Admin user created (username: admin)
+
+□ FILE DEPLOYMENT:
+  □ All PHP files copied to htdocs/modal-system/
+  □ styles.css file present
+  □ README.md documentation included
+  □ File permissions set correctly
+
+□ CONFIGURATION:
+  □ config.php database settings verified
+  □ Database connection tested
+  □ Error reporting configured
+  □ Session settings configured
+
+POST-DEPLOYMENT TESTING:
+=======================
+
+□ BASIC FUNCTIONALITY:
+  □ Main page loads: http://localhost/modal-system/
+  □ CSS styling applied correctly
+  □ Both modals (IIBS & OFAC) open properly
+  □ Modal close buttons work
+
+□ SEARCH FUNCTIONALITY:
+  □ IIBS search returns results
+  □ OFAC search returns results
+  □ Search validation works (minimum 2 characters)
+  □ Results display properly formatted
+  □ No PHP errors in search results
+
+□ ADMIN FUNCTIONALITY:
+  □ Admin login page accessible
+  □ Login with admin/admin123 works
+  □ Admin dashboard loads
+  □ System statistics display
+  □ Logout functionality works
+  □ Session timeout works (30 minutes)
+
+□ SECURITY TESTING:
+  □ SQL injection protection verified
+  □ XSS protection tested
+  □ Password hashing confirmed
+  □ Session security validated
+  □ Input sanitization working
+
+□ RESPONSIVE DESIGN:
+  □ Desktop view works properly
+  □ Mobile view responsive
+  □ Tablet view functional
+  □ Cross-browser compatibility tested
+
+PRODUCTION DEPLOYMENT ADDITIONAL STEPS:
+======================================
+
+□ SECURITY HARDENING:
+  □ Change default admin password
+  □ Update database credentials
+  □ Enable HTTPS/SSL
+  □ Configure proper file permissions
+  □ Disable PHP error display
+  □ Enable error logging only
+
+□ PERFORMANCE OPTIMIZATION:
+  □ Database indexes optimized
+  □ CSS/JS minification (if needed)
+  □ Enable gzip compression
+  □ Configure caching headers
+
+□ BACKUP & MONITORING:
+  □ Database backup strategy implemented
+  □ File backup system configured
+  □ Error monitoring setup
+  □ Access logging enabled
+
+□ DOCUMENTATION:
+  □ User manual provided
+  □ Admin guide available
+  □ Technical documentation complete
+  □ Support contact information provided
+
+SIGN-OFF:
+=========
+
+Deployment Date: _______________
+Deployed By: ___________________
+Tested By: ____________________
+Approved By: __________________
+
+Notes:
+_________________________________
+_________________________________
+_________________________________
+
+Status: □ PASSED □ FAILED □ NEEDS REVIEW
+
+===============================================
