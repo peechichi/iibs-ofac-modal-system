@@ -1,0 +1,65 @@
+===============================================
+IIBS & OFAC MODAL SYSTEM - INSTALLATION GUIDE
+===============================================
+
+SYSTEM REQUIREMENTS:
+- XAMPP (Apache + MySQL/MariaDB + PHP 7.4+)
+- Web Browser (Chrome, Firefox, Safari, Edge)
+- Minimum 100MB disk space
+
+QUICK INSTALLATION STEPS:
+=========================
+
+1. INSTALL XAMPP:
+   - Download from: https://www.apachefriends.org/
+   - Install and start Apache + MySQL services
+
+2. SETUP DATABASE:
+   - Open phpMyAdmin: http://localhost/phpmyadmin
+   - Click "Import" tab
+   - Select file: db_setup.sql
+   - Click "Go" to create database and tables
+
+3. DEPLOY FILES:
+   - Copy all files to: C:\xampp\htdocs\modal-system\ (Windows)
+   - Or: /Applications/XAMPP/htdocs/modal-system/ (Mac)
+   - Or: /opt/lampp/htdocs/modal-system/ (Linux)
+
+4. ACCESS SYSTEM:
+   - Open browser: http://localhost/modal-system/
+   - Admin Login: http://localhost/modal-system/login.php
+   - Username: admin
+   - Password: admin123
+
+TROUBLESHOOTING:
+===============
+
+Database Connection Error:
+- Ensure MySQL is running in XAMPP
+- Check config.php database settings
+- Verify database 'modal_system' exists
+
+Page Not Found:
+- Check Apache is running
+- Verify files are in correct htdocs directory
+- Clear browser cache
+
+Search Not Working:
+- Run db_setup.sql to create sample data
+- Check PHP error logs in XAMPP
+
+SECURITY NOTES:
+==============
+- Change default admin password in production
+- Update database credentials in config.php
+- Enable HTTPS for production deployment
+- Regular database backups recommended
+
+SUPPORT:
+========
+- Check README.md for detailed documentation
+- Review PHP error logs: xampp/apache/logs/error.log
+- Test database connection in phpMyAdmin
+
+Version: 1.0
+Last Updated: January 2025
